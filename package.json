@@ -1,0 +1,39 @@
+{
+  "name": "pi-snapcompact",
+  "version": "2.0.0",
+  "description": "Standalone snapcompact for native Pi: replaces LLM-based context compaction with a deterministic, image-based archival system.",
+  "type": "module",
+  "keywords": [
+    "pi-coding-agent",
+    "pi-extension",
+    "snapcompact",
+    "compaction",
+    "context-window",
+    "vision"
+  ],
+  "author": "oinuar",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test 'test/*.test.ts'",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^0.87.1",
+    "@earendil-works/pi-coding-agent": "^0.87.1",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  },
+  "files": [
+    "index.ts",
+    "src/",
+    "README.md"
+  ]
+}
